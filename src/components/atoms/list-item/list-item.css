@@ -1,0 +1,10 @@
+.list-item{
+    background-color: hsl(211, 68%, 94%);
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    gap: 1rem;
+}

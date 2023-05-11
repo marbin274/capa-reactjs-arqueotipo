@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@inteligo/atoms": ["./components/atoms/"],
+      "@inteligo/atoms/*": ["./components/atoms/*"],
+      "@inteligo/molecules": ["./components/molecules/"],
+      "@inteligo/molecules/*": ["./components/molecules/*"],
+      "@inteligo/organism": ["./components/organism/"],
+      "@inteligo/organism/*": ["./components/organism/*"],
+      "@inteligo/templates": ["./components/templates/"],
+      "@inteligo/templates/*": ["./components/templates/*"],
+      "@inteligo/models": ["./models/"],
+      "@inteligo/models/*": ["./models/*"],
+      "@inteligo/router": ["./router/"],
+      "@inteligo/router/*": ["./router/*"],
+      "@inteligo/services": ["./services/"],
+      "@inteligo/services/*": ["./services/*"],
+      "@inteligo/views": ["./views/"],
+      "@inteligo/views/*": ["./views/*"]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.nav{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.nav > h3{
+    margin: 0rem 1rem;
+}
+.nav-container{
+    padding: 0rem;
+}
+.header{
+    text-align: center;
+    background-color: #e3e3e3;
+    border: 1px solid #b4abab;
+}
+
+.main-container{
+    margin-top: 2rem;
+    background-color: #fff;
+    padding: 2rem;
+    box-sizing: border-box;
+    box-shadow: 0 0 11px -8px #000;
+}
+

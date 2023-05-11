@@ -1,0 +1,10 @@
+.btn-link {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}   
+.btn-link:hover{
+    color: #4f9ff4;
+}
