@@ -11,12 +11,13 @@ class StoreService {
     }
   }
 
+  get tasks$(): Observable<Array<ITask>> {
+    return this._task$.asObservable();
+  }
+
   addTaks(task: ITask) {
     const tasks = this._task$.getValue();
     this.setTasks([...tasks, task]);
-  }
-  get tasks$(): Observable<Array<ITask>> {
-    return this._task$.asObservable();
   }
   setTasks(taks: Array<ITask>) {
     this._task$.next([...taks]);
