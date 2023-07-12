@@ -2,6 +2,8 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
+      "@inteligo/api/": ["./api/"],
+      "@inteligo/api/*": ["./api/*"],
       "@inteligo/atoms": ["./components/atoms/"],
       "@inteligo/atoms/*": ["./components/atoms/*"],
       "@inteligo/molecules": ["./components/molecules/"],
@@ -10,6 +12,8 @@
       "@inteligo/organism/*": ["./components/organism/*"],
       "@inteligo/templates": ["./components/templates/"],
       "@inteligo/templates/*": ["./components/templates/*"],
+      "@inteligo/config": ["./config/"],
+      "@inteligo/config/*": ["./config/*"],
       "@inteligo/models": ["./models/"],
       "@inteligo/models/*": ["./models/*"],
       "@inteligo/router": ["./router/"],

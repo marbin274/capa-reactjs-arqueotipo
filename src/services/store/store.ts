@@ -2,10 +2,10 @@ import { ITask } from "@inteligo/models/task";
 import { BehaviorSubject, Observable } from "rxjs";
 
 class StoreService {
-  private _task$: BehaviorSubject<Array<ITask>>;
+  private readonly _task$: BehaviorSubject<Array<ITask>>;
   constructor() {
     this._task$ = new BehaviorSubject<Array<ITask>>([]);
-    let taskStorage = localStorage.getItem("tasks");
+    const taskStorage = localStorage.getItem("tasks");
     if (taskStorage) {
       this._task$.next(JSON.parse(taskStorage));
     }
@@ -19,6 +19,7 @@ class StoreService {
     const tasks = this._task$.getValue();
     this.setTasks([...tasks, task]);
   }
+
   setTasks(taks: Array<ITask>) {
     this._task$.next([...taks]);
     localStorage.setItem("tasks", JSON.stringify(taks));

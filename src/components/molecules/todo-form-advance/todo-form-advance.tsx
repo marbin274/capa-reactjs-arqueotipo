@@ -14,7 +14,7 @@ export const TodoFormAdvance: React.FC<PropsWithChildren<IProps>> = ({
     reset,
     formState: { errors },
   } = useForm<ITaskInputs>({
-    resolver: yupResolver(TaskSchema),
+    resolver: yupResolver<ITaskInputs>(TaskSchema),
   });
 
   const handleAddTask = (data: ITaskInputs) => {
